@@ -1,0 +1,20 @@
+/* Importing Bootstrap SCSS file */
+@import "bootstrap/scss/bootstrap";
+
+/* Importing Font Awesome */
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+/* Gradient background variable */
+$bg_Linear: linear-gradient(
+  90deg,
+  rgba(44, 208, 113, 1) 0%,
+  rgba(0, 212, 255, 1) 100%
+);
+
+/* Button with linear gradient */
+.leinerG {
+  background: $bg_Linear;
+}
+body {
+  overflow-x: hidden;
+}

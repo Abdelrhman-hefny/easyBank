@@ -1,0 +1,24 @@
+<div class="container text-center text-lg-start">
+  <h2 class="mt-5">Why choose Easybank?</h2>
+  <p class="fs-5 opacity-75 w-100 w-md-75 w-lg-50 my-4 mx-auto">
+    We leverage Open Banking to turn your bank account into your financial hub.
+    Control your finances like never before.
+  </p>
+
+  <div class="row g-2">
+    <div
+      class="col-12 col-md-6 col-lg-3"
+      *ngFor="let feature of FeaturesList; let i = index"
+    >
+      <div class="card text-start border-0 feature-card text-center text-lg-start">
+        <div class="card-body">
+          <img [src]="Icons[i]" alt="" class="icon" />
+          <h4 class="card-title py-3">{{ feature }}</h4>
+          <p class="card-text opacity-75">
+            {{ FeatureDescriptions[i] }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
